@@ -1,34 +1,150 @@
 html {
   scroll-behavior: smooth;
 }
-.home {
-  margin: 20px;
-
-  text-align: center;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(12px);
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: #1f1f1f;
-
-  border-radius: 20px;
-}
 body {
   background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
 }
 
 .Nav {
-  text-align: center;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(12px);
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: #1f1f1f;
-  width: 25%;
-  margin: auto;
   position: fixed;
   top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+
+  padding: 12px 28px;
+  width: fit-content;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+
+  z-index: 9999; /* 🔑 THIS IS CRITICAL */
 }
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px; /* spacing between items */
+  padding: 0;
+  margin: 0;
+}
+
 .navitems {
   text-decoration: none;
+  .navitems {
+    text-decoration: none;
+    font-weight: 500;
+    color: #5a3ea1;
+    transition: 0.3s ease;
+  }
+}
+.home {
+  margin: 20px;
+  margin-top: 100px;
+  padding: 30px;
+
+  text-align: center;
+  background: rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #1f1f1f;
+
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease,
+    background 0.5s ease;
+}
+
+.home:hover {
+  transform: translateY(-6px) scale(1.01);
+
+  background: linear-gradient(
+    135deg,
+    rgba(166, 192, 254, 0.35),
+    rgba(246, 128, 132, 0.35)
+  );
+
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+.Headlinegradiant {
+  background: linear-gradient(135deg, #5f7cff, #ff5c7a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  font-weight: 700;
+}
+
+.Project1 {
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #1f1f1f;
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    background 0.4s ease;
+}
+
+.Project1:hover {
+  transform: translateY(-4px);
+
+  background: linear-gradient(
+    135deg,
+    rgba(166, 192, 254, 0.25),
+    rgba(246, 128, 132, 0.25)
+  );
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+.Educationdiv {
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #1f1f1f;
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    background 0.4s ease;
+}
+.Educationdiv:hover {
+  background: linear-gradient(
+    45deg,
+    rgba(166, 192, 254, 0.28),
+    rgba(246, 128, 132, 0.28)
+  );
+}
+.contactme {
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #1f1f1f;
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    background 0.4s ease;
+}
+.contactme:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(166, 192, 254, 0.28),
+    rgba(246, 128, 132, 0.28)
+  );
 }
